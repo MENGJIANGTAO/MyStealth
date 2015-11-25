@@ -6810,6 +6810,20 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594856739}
   m_Enabled: 1
+--- !u!114 &1594856746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594856739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e688a65921004b6cbd0cb804818a7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoutingClip: {fileID: 8300000, guid: f2e0ffd43812bf642a502c434b572c75, type: 3}
+  turnSmoothing: 15
+  speedDampTime: .100000001
 --- !u!1 &1612971378
 GameObject:
   m_ObjectHideFlags: 0
@@ -7361,6 +7375,7 @@ GameObject:
   - 20: {fileID: 1803199175}
   - 92: {fileID: 1803199174}
   - 124: {fileID: 1803199173}
+  - 114: {fileID: 1803199172}
   m_Layer: 0
   m_Name: camera_main
   m_TagString: MainCamera
@@ -7368,6 +7383,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1803199172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803199171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c7a4dc0c7464910aa721aad23c715f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smooth: 1.5
 --- !u!124 &1803199173
 Behaviour:
   m_ObjectHideFlags: 0
@@ -7421,8 +7448,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1803199171}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: .300705999, y: -.26021719, z: .0856560171, w: .913523972}
+  m_LocalPosition: {x: 22.009203, y: 34.3419075, z: -29.5305367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7522,6 +7549,7 @@ GameObject:
   - 4: {fileID: 1985833758}
   - 82: {fileID: 1985833759}
   - 114: {fileID: 1985833760}
+  - 114: {fileID: 1985833761}
   m_Layer: 0
   m_Name: gameController
   m_TagString: GameController
@@ -7628,6 +7656,29 @@ MonoBehaviour:
   lightLowIntensity: 0
   fadeSpeed: 7
   musicFadeSpeed: 1
+--- !u!114 &1985833761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985833757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b78dfb6ba21477282f299f78ac53a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dyingState: 0
+  locomotionState: 0
+  shoutState: 0
+  deadBool: 0
+  speedFloat: 0
+  sneakingBool: 0
+  shoutingBool: 0
+  playerInSightBool: 0
+  shotFloat: 0
+  aimWeightFloat: 0
+  angularSpeedFloat: 0
+  openBool: 0
 --- !u!1001 &2042444726
 Prefab:
   m_ObjectHideFlags: 0
