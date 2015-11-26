@@ -26,7 +26,7 @@ public class ScreenFadeInOut : MonoBehaviour {
 		rawImage.color = Color.Lerp (rawImage.color, Color.black, fadeSpeed * Time.deltaTime);
 	}
 
-	void StartScene(){
+	public void StartScene(){
 		FadeToClear ();
 		if (rawImage.color.a <= 0.05f) {
 			rawImage.color = Color.clear;
@@ -35,7 +35,7 @@ public class ScreenFadeInOut : MonoBehaviour {
 		}
 	}
 
-	void EndScene(){
+	public void EndScene(){
 		rawImage.enabled = true;
 		FadeToBlack ();
 		if (rawImage.color.a >= 0.95f) {
