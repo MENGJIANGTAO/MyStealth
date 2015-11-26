@@ -29,7 +29,7 @@ public class HashIDs : MonoBehaviour {
 		sneakingBool = Animator.StringToHash("Sneaking");
 		shoutingBool = Animator.StringToHash("Shouting");
 		playerInSightBool = Animator.StringToHash("PlayerInSight");
-		shotFloat = Animator.StringToHash ("shot");
+		shotFloat = Animator.StringToHash ("Shot");
 		aimWeightFloat = Animator.StringToHash ("AimWeight");
 		angularSpeedFloat = Animator.StringToHash ("AngularSpeed");
 		openBool = Animator.StringToHash ("Open");

@@ -47,7 +47,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	void PlayerDead(){
-		if (deathanim.GetCurrentAnimatorStateInfo (0).shortNameHash == hash.dyingState) {
+		if (deathanim.GetCurrentAnimatorStateInfo (0).nameHash == hash.dyingState) {
 			deathanim.SetBool(hash.deadBool,false);
 			deathanim.SetFloat(hash.speedFloat,0f);
 			playerMovement.enabled = false;
